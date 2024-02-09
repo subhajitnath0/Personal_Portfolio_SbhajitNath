@@ -1,0 +1,384 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(155, 155, 155, 0.5) rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-track {
+    background:  rgba(255, 255, 255, 0.1);;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color:rgba(155, 155, 155, 0.5);;
+    border-radius: 10px;
+    border: 3px solid rgba(255, 255, 255, 0.1);;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(155, 155, 155, 0.8);
+}
+
+
+body {
+    font-family: 'Hind Siliguri', sans-serif;
+    background-color: white;
+}
+
+.nav {
+    background-color: #F5F7FE;
+    width: 100vw;
+    height: 60px;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.portfolio_icon {
+    height: 60px;
+    width: auto;
+    padding: 5px;
+    margin-left: 30px;
+    display: inline;
+
+}
+
+.nav_menu {
+    margin-right: 50px;
+    margin-top: 15px;
+    display: inline;
+    float: right;
+}
+
+.nav_menu li {
+
+    display: inline;
+}
+
+.nav_menu li a {
+    margin: 10px;
+    text-decoration: none;
+    color: #26028B;
+    font-size: large;
+    font-weight: 700;
+
+}
+
+.menu_button {
+    display: none;
+    font-size: xx-large;
+    border: 0px;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+}
+
+/* .nav_menu .active {
+    color: rgb(255, 111, 59);
+    padding: 5px;
+    border-bottom: 5px solid rgb(255, 111, 59);
+    border-top: 1px solid rgb(255, 111, 59);
+} */
+
+/* .nav_menu a:hover {
+    color: rgb(255, 111, 59);
+} */
+
+
+header {
+    margin-top: 60px;
+}
+
+
+
+.img_subhajit_pic {
+    width: 80%;
+    height: auto;
+    display: block;
+    /* height: auto; */
+    border-radius: 20px;
+    /* margin: auto; */
+
+
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.colorgray {
+    color: #615f5f;
+}
+
+.colorblu {
+    color: #26028B;
+}
+
+.text-home.colorblu,
+#type {
+    display: inline;
+}
+
+@keyframes typing {
+
+    from,
+    to {
+        width: 0;
+    }
+
+    50% {
+        border-right: none;
+    }
+
+    51%,
+    100% {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 850px) {
+    .nav_menu {
+        display: none;
+
+    }
+
+    .menu_button {
+        display: block;
+        font-size: xx-large;
+        margin: 10px 30px;
+        border: 0px;
+        background-color: rgba(255, 255, 255, 0);
+        cursor: pointer;
+        float: right;
+    }
+
+    .nav_menu.click {
+        display: inline-block;
+        background-color: white;
+        width: 100vw;
+        position: relative;
+        top: -25px;
+        left: 50px;
+    }
+
+    .nav_menu.click li {
+        padding: 10px;
+        display: block;
+        text-align: center;
+    }
+
+    /* .nav_menu .active {
+        color: #ff0000;
+        padding: 5px;
+        border: none;
+
+    } */
+
+    section {
+        padding: 20px;
+    }
+
+}
+
+/* @media (max-width: 500px) {
+    #home>div {
+        flex: 100%;
+    }
+} */
+
+
+
+
+
+
+
+.hire_button {
+    --i: var(--light, 0);
+    --not-i: calc(1 - var(--i));
+    --j: var(--press, 0);
+    --not-j: calc(1 - var(--j));
+    z-index: var(--i);
+    border: none;
+    width: max-content;
+    border-radius: 10px;
+    /* transform: scale(calc(1 - var(--j)*.02)); */
+    background: #26028B;
+    font-size: x-large;
+    transition: box-shadow 0.3s, transform 0.3s cubic-bezier(0.2, 4, 1, 3);
+    cursor: pointer;
+    padding: 5px 20px;
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+}
+
+
+
+.My_Resume {
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid #26028B;
+    color: #26028B;
+    font-size: x-large;
+}
+
+.My_Resume:hover {
+    background-color: #26028B;
+    border: 2px solid #26028B;
+    color: rgb(255, 255, 255);
+}
+
+
+#about {
+    background-color: #F5F7FE;
+}
+
+.icon {
+    margin-top: 30px;
+}
+
+
+
+p {
+    font-size: larger;
+}
+
+.Downlode_CV {
+    background-color: #26028B;
+    color: white;
+    padding: 10px 20px;
+    margin: 30px 0px;
+    border: #26028B;
+    border-radius: 20px;
+    font-size: x-large;
+}
+
+.img_subhajit {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5%;
+    border: 5px solid #615f5f14;
+}
+
+/* .sosal_ico {
+    width: 40px;
+    height: 40px; 
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    align-self: center;
+    padding-top: 1px;
+    background-color: #26028B;
+} */
+
+.sosal_ico {
+    display: table-caption;
+    padding: 5px;
+}
+
+
+.sosal_ico path {
+    fill: #26028B;
+}
+
+.sosal_ico circle {
+    stroke: #26028B;
+}
+
+.sosal_ico:hover path {
+    fill: #615f5f;
+}
+
+.sosal_ico:hover circle {
+    stroke: #615f5f;
+}
+
+.sosal_ico svg {
+    width: 40px;
+    height: auto;
+}
+
+@media screen and (max-width: 767px) {
+    #about_img {
+        display: none;
+    }
+}
+
+/* service */
+
+.service_header h3 {
+    text-align: center;
+    color: #26028B;
+    font-weight: bold;
+}
+
+.Service_svg svg {
+    width: 150px;
+}
+
+.service_body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    margin: 0px;
+}
+
+.service_card {
+    list-style: none;
+    /* display: inline-flex; */
+    margin: 10px;
+    justify-content: center;
+    text-align: justify;
+    position: relative;
+    width: 350px;
+    height: 425px;
+    border-radius: 5%;
+    background: linear-gradient(to bottom left, rgba(231, 236, 255, 1), rgba(187, 193, 216, 0.3956));
+}
+
+.service_icon {
+    padding: 20px;
+    height: 200px;
+    width: 250px;
+
+}
+
+.service_icon img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+.service_name {
+    color: #26028B;
+    padding: 0px 20px;
+    font-weight: bold;
+}
+
+.Description {
+    padding: 20px;
+}
+
+.Description p {
+    color: #26028B;
+    margin-bottom: 5px;
+    height: 120px;
+    padding-right: 10px;
+}
+
+.expanded {
+
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(155, 155, 155, 0.5) rgba(255, 253, 253, 0);
+}
+
+.read-more{
+    font-weight: bold;
+}
