@@ -7,13 +7,16 @@
 }
 
 ::-webkit-scrollbar-track {
-    background:  rgba(255, 255, 255, 0.1);;
+    background: rgba(255, 255, 255, 0.1);
+    ;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color:rgba(155, 155, 155, 0.5);;
+    background-color: rgba(155, 155, 155, 0.5);
+    ;
     border-radius: 10px;
-    border: 3px solid rgba(255, 255, 255, 0.1);;
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    ;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -309,13 +312,13 @@ p {
 
 /* service */
 
-.service_header h3 {
+.service_header h3,.project_header h3, .contact_header h3{
     text-align: center;
     color: #26028B;
     font-weight: bold;
 }
 
-.Service_svg svg {
+.Service_svg svg, .resume_svg svg,.project_svg svg, .contact_svg svg {
     width: 150px;
 }
 
@@ -379,6 +382,115 @@ p {
     scrollbar-color: rgba(155, 155, 155, 0.5) rgba(255, 253, 253, 0);
 }
 
-.read-more{
+.read-more {
     font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+/* Resume */
+
+#resume {
+    background-color: #F5F7FE;
+}
+
+.resume_header h3 {
+    text-align: center;
+    color: #26028B;
+    font-weight: bold;
+}
+
+.work_experience h4,
+.education_diplomas h4 {
+    color: #26028B;
+    font-weight: 900;
+}
+
+.resume_full {
+    border-left: dashed 2px #897f8a;
+    padding-left: 40px;
+}
+
+.resume_part {
+    background-image: url(./New%20folder/dot.png);
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    position: absolute;
+    margin-top: 16px;
+    transform: translateX(-95%);
+    padding: 10px;
+}
+
+.svg-container {
+    position: relative;
+    display: inline-block;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1em;
+}
+
+.resume_body h5{
+    color: #26028B;
+    font-weight: 900;
+}
+
+.resume_body h6{
+    color: #615f5f;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+.resume_body p{
+    font-size:medium;
+    color: #615f5f;
+    font-style: italic;
+    text-align: justify;
+}
+.svg-container svg{
+    width: 260px;
+}
+
+
+
+
+
+.justify-content-center-project {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+/* contact */
+
+#contact{
+    background-color: #F5F7FE;
+}
+
+a{
+    text-decoration: none;
+}
+.contact{
+    display: inline-flex;
+   padding: 10px;
+   text-decoration: none;
+   color:#615f5f;
+   font-weight: 700;
+}
+
+footer{
+    padding: 10px;
+    background-color: #26028B;
+    color: rgb(255, 255, 255);
 }
