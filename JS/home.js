@@ -1,32 +1,35 @@
-const textArray = ["Backend Designer", "SEO", "Web Designer",];
+const textArray = ["Backend Designer", "Frontend Designer", "SEO", "Web Designer"];
 
 let textIndex = 0;
 let isTyping = true;
+let textArrayIndex = 0;
 
 function animateText() {
+    let text = textArray[textArrayIndex];
+    let textLength = text.length;
     const typeElement = document.querySelector('#type');
-    const currentText = textArray[textIndex];
-    const currentLength = typeElement.textContent.length;
-
     if (isTyping) {
-
-        typeElement.textContent = currentText.substring(0, currentLength + 1);
-
-        if (currentLength == typeElement.textContent.length) {
-            setTimeout(() => {
-                isTyping = false;
-            }, 1000);
+        typeElement.textContent = text.substring(0, typeElement.textContent.length + 1)
+        if (typeElement.textContent.length == textLength) {
+            isTyping = false;
         }
-    }
-
-    if (!isTyping) {
-
-        typeElement.textContent = currentText.substring(0, currentLength - 1);
-        if (0 == typeElement.textContent.length) {
+    } else if (!isTyping) {
+        typeElement.textContent = text.substring(0, typeElement.textContent.length - 1)
+        if (typeElement.textContent.length === 0) {
+            if (textArrayIndex == textArray.length - 1) {
+                textArrayIndex = 0;
+            } else {
+                textArrayIndex++;
+            }
             isTyping = true;
-            textIndex = (textIndex + 1) % textArray.length;
         }
     }
 }
 
-setInterval(animateText, 100);
+setInterval(animateText, 300);
+
+let blink_Text = document.querySelector('#blink_Text')
+let text = blink_Text.textContent;
+setInterval(()=>{
+    blink_Text.textContent == text? blink_Text.textContent = '' : blink_Text.textContent =text;
+},200)

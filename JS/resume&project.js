@@ -1,14 +1,13 @@
 var workExperienceData = [
     {
-        date: "April, 2023 - Sep, 2023",
+        date: "April 2023 - Sep 2023",
         title: "Software Developer",
         organization: "AOF Engineering Systems, LLC",
-        description: "At AOF Engineering Systems, LLC, I had an enriching experience. Working with Laravel, MySQL, JavaScript, HTML, and CSS, I managed events with the Google Calendar API and contributed to two exciting projects. I am thankful for the knowledge and experience I gained, which have been instrumental in my growth as a software developer. I am confident in my ability to succeed in future endeavors. Thank you, AOF Engineering Systems, LLC, for being a significant part of my journey."
+        description: "At AOF Engineering Systems, LLC, I had an enriching experience. Working with Laravel, MySQL, JavaScript, HTML, and CSS, I managed events with the Google Calendar API and contributed to two exciting projects. I am thankful for the knowledge and experience I gained, which has been instrumental in my growth as a software developer. I am confident in my ability to succeed in future endeavors. Thank you, AOF Engineering Systems, LLC, for being a significant part of my journey."
     },
 
     // Add more objects if needed
 ];
-
 
 var educationData = [
     {
@@ -25,7 +24,7 @@ var projectData = [
     {
         date: "2023",
         title: "One View",
-        organization: "AOF Engineering Systems ,LLC",
+        organization: "AOF Engineering Systems, LLC",
         description: `I work as a junior developer on this project and use Laravel and Ajax.`,
         // link: "https://softdevltd.com/demo/template/codefolio/#contact"
     },
@@ -38,7 +37,7 @@ var projectData = [
     },
     {
         date: "2023",
-        title: "Virtual-Drum-Kit-Player",
+        title: "Virtual Drum Kit Player",
         organization: "Seacom Engineering College",
         description: `"Virtual Drum Kit Player" is a web-based drumming application that lets you play a virtual drum kit using your keyboard or mouse. Easy and fun to use for drummers of all skill levels. Start drumming now with "Virtual Drum Kit Player"!`,
         link: "https://subhajitnath0.github.io/Virtual-Drum-Kit-Player/"
@@ -48,7 +47,7 @@ var projectData = [
         date: "2022",
         title: "Smart Dustbin",
         organization: "Seacom Engineering College",
-        description: `We have a problem with too much garbage and an increasing population. This is causing environmental issues, like pollution and diseases. To help with this problem, we made a smart dustbin. It uses an ultrasonic sensor to know when to open and a motor to open the lid. It's a fun and easy way to keep your home clean and can be used for different types of waste. The dustbin will open when someone or something is nearby, and close after a certain amount of time.`,
+        description: `We have a problem with too much garbage and an increasing population. This is causing environmental issues, like pollution and diseases. To help with this problem, we made a smart dustbin. It uses an ultrasonic sensor to know when to open and a motor to open the lid. It's a fun and easy way to keep your home clean and can be used for different types of waste. The dustbin will open when someone or something is nearby and close after a certain amount of time.`,
         link: "https://github.com/subhajitnath0/SmartDustbin/"
     },
     {
@@ -91,7 +90,7 @@ function createSectionHTML(data) {
 var workExperienceContainer = document.querySelector('.work_experience');
 var educationContainer = document.querySelector('.education_diplomas');
 var projectContainer = document.querySelector('.project_body');
-console.log(projectContainer)
+// console.log(projectContainer)
 
 workExperienceContainer.innerHTML = createSectionHTML(workExperienceData);
 educationContainer.innerHTML = createSectionHTML(educationData);

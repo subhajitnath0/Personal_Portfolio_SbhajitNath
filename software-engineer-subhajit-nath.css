@@ -195,7 +195,10 @@ header {
 
 
 
-
+#blink_Text{
+    font-weight: bold;
+    font-size: 45px;
+}
 
 
 .hire_button {

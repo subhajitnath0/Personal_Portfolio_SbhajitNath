@@ -43,7 +43,6 @@ function renderServices() {
         serviceList.appendChild(listItem);
     });
 
-    truncateText();
 }
 function toggleText(index) {
     const description = document.getElementById(`service_Description_${index}`);
@@ -53,13 +52,13 @@ function toggleText(index) {
 
     if (paragraph.classList.contains('expanded')) {
         paragraph.classList.remove('expanded');
-        console.log(paragraph);
+        // console.log(paragraph);
         paragraph.innerHTML = truncateDescription(full_description);
         readMore.textContent = 'Read more...';
     } else {
         paragraph.classList.add('expanded');
         paragraph.innerHTML = full_description;
-        console.log(full_description);
+        // console.log(full_description);
         readMore.textContent = 'Read less';
     }
 }
