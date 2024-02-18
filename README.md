@@ -27,7 +27,7 @@ I am Subhajit Nath, Software Engineer. This Project Is my Personal Portfolio whe
 - Open the ``` index.html``` file in your preferred web browser.
 
 ## Live Demo
-Experience my portfolio live at [Portfolio - Subhajit Nath]([http://127.0.0.1:5500/](https://subhajitnath0.github.io/Personal_Portfolio_SbhajitNath/))
+Experience my portfolio live at [Portfolio - Subhajit Nath](https://subhajitnath0.github.io/Personal_Portfolio_SbhajitNath/)
 
 ## Contact Information
 - Email: subhajitn851@gmail.com
