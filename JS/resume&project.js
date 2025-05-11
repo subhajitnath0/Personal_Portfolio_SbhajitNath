@@ -1,5 +1,11 @@
 var workExperienceData = [
     {
+        date: "Aug 2024 - Present",
+        title: "Software Engineer",
+        organization: "Procellence Technology",
+        description: "At Procellence Technology, I am currently working as a Software Engineer. In this role, I utilize Node.js, TypeScript, MongoDB, and Google Cloud Platform (GCP) to build and maintain cloud functions and APIs for the Qynko app. This opportunity allows me to expand my skills in cloud-based solutions and work on cutting-edge technologies. I am excited to contribute to the success of Qynko and continue growing in my role."
+    },
+    {
         date: "April 2023 - Sep 2023",
         title: "Software Developer",
         organization: "AOF Engineering Systems, LLC",
@@ -22,11 +28,30 @@ var educationData = [
 
 var projectData = [
     {
+        date: "Aug 2024 - Present",
+        title: "Qynko - App",
+        organization: "Procellence Technology",
+        description: `Qynko is the ultimate platform for connecting with influencers, creators, and experts from diverse industries. Whether you're seeking personalized advice, arranging fan meetups, or just want to engage in meaningful conversations with your favorite creators, Qynko brings these experiences directly to your fingertips.`,
+        link: "https://app.qynko.com/" 
+    },
+    {
+        date: "Jul 2024 - Jul 2024",
+        title: "Laravel User Role Permission Management",
+        organization: "Seacom Engineering College",
+        description: `The Laravel User Role Permission Management system is designed to provide an efficient and scalable way to manage user roles and permissions within a Laravel application. This system allows administrators to create and assign roles to users, and to define specific permissions for each role. With this solution, you can ensure that users have appropriate access levels based on their assigned roles, enhancing the security and functionality of your application.`,
+        link: "https://github.com/subhajitnath0/Laravel-User-Role-Permission-Management"
+    },    
+    {
+        date: "Apr 2023 - Aug 2023",
+        title: "Know Your Number",
+        organization: "AOF Engineering Systems, LLC",
+        description: `Know Your Number is an active web application built on the Laravel framework. It helps in managing employees, analyzing clients, billable areas, and more for Know Your Numbers company.`,
+    },
+    {
         date: "2023",
         title: "One View",
         organization: "AOF Engineering Systems, LLC",
         description: `I work as a junior developer on this project and use Laravel and Ajax.`,
-        // link: "https://softdevltd.com/demo/template/codefolio/#contact"
     },
     {
         date: "2023",
@@ -50,14 +75,6 @@ var projectData = [
         description: `We have a problem with too much garbage and an increasing population. This is causing environmental issues, like pollution and diseases. To help with this problem, we made a smart dustbin. It uses an ultrasonic sensor to know when to open and a motor to open the lid. It's a fun and easy way to keep your home clean and can be used for different types of waste. The dustbin will open when someone or something is nearby and close after a certain amount of time.`,
         link: "https://github.com/subhajitnath0/SmartDustbin/"
     },
-    {
-        date: "2022",
-        title: "Employee Management System",
-        organization: "Seacom Engineering College",
-        description: "We use technology to work faster, save time and money. An employee management system is a software program in C that helps us get more profits with fewer employees.",
-        link: "https://github.com/subhajitnath0/EMPLOYEE_MANAGEMENT_SYSTEM"
-    },
-
     // Add more objects if needed
 ];
 
