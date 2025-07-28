@@ -1,0 +1,24 @@
+.stat-box {
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+  background-color: #009FE3;
+}
+
+.stat-box.light {
+  background-color: #eaf5fe;
+  border: 1px solid #c7e6fc;
+}
+
+.icon-wrapper {
+  background-color: white;
+  color: #009FE3;
+  padding: 10px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+#project{
+    background-color: #F5F7FE;
+}

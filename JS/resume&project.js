@@ -108,7 +108,12 @@ var workExperienceContainer = document.querySelector('.work_experience');
 var educationContainer = document.querySelector('.education_diplomas');
 var projectContainer = document.querySelector('.project_body');
 // console.log(projectContainer)
-
+if(workExperienceContainer){
 workExperienceContainer.innerHTML = createSectionHTML(workExperienceData);
+}
+if(educationContainer){
 educationContainer.innerHTML = createSectionHTML(educationData);
+}
+if(projectContainer){
 projectContainer.innerHTML = createSectionHTML(projectData);
+}
