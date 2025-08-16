@@ -238,7 +238,7 @@ var educationData = [{
         <span class="badge bg-warning text-dark">IoT</span>
       </div>
 
-      <aside class="col-12 col-lg-12">
+      <aside class="col-12 col-lg-12 pt-4">
         <div class="p-3 border rounded-3 h-100">
           <h3 class="h6 text-uppercase mb-3">Program Snapshot</h3>
           <dl class="row mb-0">
