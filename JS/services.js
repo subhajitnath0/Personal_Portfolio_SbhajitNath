@@ -5,19 +5,20 @@ const services = [
     //     description: ""
     // },
     {
-        name: "Backed Design",
+        name: "Backed development",
         icon: "./New folder/Backed_Design.svg",
-        description: "Looking for a top-notch backend for your company? Look no further! I develop fully functional and high-quality backends using Node JS, Express JS, and Laravel. With my expertise, you can rest assured that your backend will be reliable and efficient. If you're interested in taking your company to the next level, connect with me today!"
+        description: "Looking for a dependable backend developer for your company? I craft custom, high-performance backends using Node.js, Express.js, and Laravel—designed for scalability, security, and speed. From API development and cloud integration to complex data workflows, you’ll get robust, efficient systems tailored to your business needs. Unlock reliable automation, seamless connectivity, and future-ready architecture. Let’s build the foundation for your next-level success—connect today!",
     },
     {
+        name: "Frontend development",
         name: "Web Design",
         icon: "./New folder/Web_Design.svg",
-        description: "With my expertise in React Js, HTML, CSS, Bootstrap, Javascript, and Laravel, I can design a website that is both exceptional and fully functional for you and your company. Contact me now to get started."
+        description: "Elevate your brand with stunning, user-focused web design. I blend creativity and responsive layouts to deliver fast, modern websites optimized for engagement and conversions. Using the latest in HTML, CSS, JavaScript, and UI/UX best practices, I create visually appealing experiences that look great on any device. From landing pages to full-scale platforms, let’s build your digital presence for growth and impact—connect now to launch your vision!"
     },
     {
         name: "SEO",
         icon: "./New folder/SEO.svg",
-        description: "Developing a fully SEO-friendly website is crucial for achieving top search rankings. With my expertise, your website can be optimized to its fullest potential, ensuring that your business gets the visibility it deserves. Let me help you create a website that will attract and engage your target audience, and take your online presence to the next level."
+        description: "Boost your online visibility and drive targeted traffic with expert SEO services. I optimize your website for search engines using proven strategies—keyword research, technical audits, on-page enhancements, and content creation. Elevate your rankings on Google and convert searches into customers with clean code, fast load times, and powerful metadata. Let me help you outshine competitors and achieve sustainable growth with a results-driven SEO strategy built for success!"
     },
 ];
 
@@ -25,10 +26,10 @@ function renderServices() {
     const serviceList = document.getElementById('service_body');
 
     services.forEach((service, index) => {
-        const listItem = document.createElement('li');
-        listItem.classList.add('service_card');
+                const listItem = document.createElement('li');
+                listItem.classList.add('service_card');
 
-        listItem.innerHTML = `
+                listItem.innerHTML = `
     <div class="service_icon">
         <img src="${service.icon}" alt="${service.name}">
     </div>

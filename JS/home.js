@@ -1,4 +1,4 @@
-const textArray = ["Backend Designer", "Frontend Designer", "SEO", "Web Designer"];
+const textArray = ["Software Engineer", "Full-Stack Developer", "Backend Developer", "Frontend Developer", "SEO", "Web Designer"];
 
 let textIndex = 0;
 let isTyping = true;
@@ -30,6 +30,6 @@ setInterval(animateText, 300);
 
 let blink_Text = document.querySelector('#blink_Text')
 let text = blink_Text.textContent;
-setInterval(()=>{
-    blink_Text.textContent == text? blink_Text.textContent = '' : blink_Text.textContent =text;
-},200)
+setInterval(() => {
+    blink_Text.textContent == text ? blink_Text.textContent = '' : blink_Text.textContent = text;
+}, 200)
